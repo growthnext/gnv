@@ -91,7 +91,7 @@ const cardObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const cards = entry.target.querySelectorAll(
-        '.adv-card, .rev-card, .bm-card, .txn-step-card, .founder-card, .market-highlight, .contact-card'
+        '.adv-card, .rev-card, .bm-card, .txn-step-card, .founder-card, .market-highlight, .contact-card, .scf-party-card'
       );
       cards.forEach((card, i) => {
         setTimeout(() => {
@@ -106,10 +106,10 @@ const cardObserver = new IntersectionObserver((entries) => {
 
 // Set initial state for cards and observe containers
 document.querySelectorAll(
-  '.adv-grid, .revenue-cards, .bm-features, .txn-steps-row, .founders-grid, .market-content, .contact-info'
+  '.adv-grid, .revenue-cards, .bm-features, .txn-steps-row, .founders-grid, .market-content, .contact-info, .scf-parties, .scf-parties, .scf-parties, .scf-parties'
 ).forEach(container => {
   const cards = container.querySelectorAll(
-    '.adv-card, .rev-card, .bm-card, .txn-step-card, .founder-card, .market-highlight, .contact-card'
+    '.adv-card, .rev-card, .bm-card, .txn-step-card, .founder-card, .market-highlight, .contact-card, .scf-party-card'
   );
   cards.forEach(card => {
     card.style.opacity = '0';
